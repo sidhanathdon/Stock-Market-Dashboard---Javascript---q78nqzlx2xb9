@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="App.js" defer></script>
+    <title>Stock Market Project</title>
+  </head>
+  <body>
+    <header>
+        <h1>Welcome To Stock Market Dashboard</h1>
+    </header>
+    <div class="main-container">
+        <h2 class="title w-100">Stock Market Dashboard</h2>
 
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search for Symbol................">
+                <button type="button" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="button-container">
+                <button class="action-button" onclick="getDurationForStock('INTRADAY')">Intraday</button>
+                <button class="action-button" onclick="getDurationForStock('DAILY')">Daily</button>
+                <button class="action-button" onclick="getDurationForStock('WEEKLY')">Weekly</button>
+                <button class="action-button" onclick="getDurationForStock('MONTHLY')">Monthly</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <h3 class="title">YOUR WATCHLIST</h3>
+            <div id="watchlist-container" class="content">
+                
+            </div>
+        </div>
+</body> 
+</html> 

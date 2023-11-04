@@ -1,1 +1,268 @@
-
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition for hover effect */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .action-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    width: 160px;
+    transition: background-color 0.3s; /* Add transition for hover effect */
+  }
+  
+  .section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 2);
+    background-color: #b8aaaa;
+    color: #5d5858;
+    height: 50px;
+    font-weight: bold;
+  }
+  #watchlist-container {
+    /* background-color: #fff; */
+    padding: 5px;
+    /* border-radius: 5px; */
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+    margin-top: 5px;
+  }
+  
+  .watchlist-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #999;
+    box-shadow: 0 2px 5px #3333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .icon {
+    width: 100px;
+    height: 30px;
+    color: #3d3c3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .search-button i {
+    font-size: 18px;
+  }
+  
+  .watchlist-text {
+    flex-grow: 1;
+    height: 40px;
+    background-color: rgb(164, 164, 162);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    margin: 0 10px;
+  }
+  .watchlist-day {
+    flex-grow: 1;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    margin: 0 10px;
+  }
+  .remove-button {
+    background-color: #ff4444;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    rotate: 45deg;
+    font-size: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  /* table */
+  
+  .table-container {
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+  }
+  
+  .custom-table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .custom-table thead,
+  .custom-table tbody {
+    background-color: #777;
+  }
+  
+  
+  .main-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+  }
+  
+  .bg_green {
+    background-color: green;
+  }
+  
+  .bg_red {
+    background-color: red;
+  }
+  
+  .bg_white {
+    background-color: #fff;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .title {
+    background-color: #777;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 10px;
+  }
+  
+  .container {
+    background-color: #ccc;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .w-100 {
+    width: 100%;
+  }
+  
+  .mt-10 {
+    margin-top: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  .button-container .action-button:hover {
+    background-color: #555; /* Change color on hover */
+    transform: scale(1.1);
+    transition: transform 0.2s;
+  }
+  
+  /* CSS for small screens (e.g., mobile phones) */
+  @media (max-width: 768px) {
+    .main-container {
+      max-width: 90%; /* Reduce the container width for small screens */
+      .watchlist-item {
+        flex-direction: row; /* Stack watchlist items horizontaly on smaller screens */
+        padding: 10px; /* Adjust padding for better spacing */
+      }
+    
+      .watchlist-item .icon {
+        margin: 10px 0; /* Add spacing between icon and text */
+      }
+    }
+  }
+  
+  /* animation */
+  .search-button:hover {
+    background-color: #555; /* Change background color on hover */
+  }
+  
+  /* Change the color of the search icon on hover */
+  .search-button:hover i {
+    color: #ff9900; /* Change the icon color on hover */
+  } 
